@@ -41,7 +41,7 @@ func getPort() string {
 
 func render(w http.ResponseWriter, tmpl string, pageVars PageVars) {
 
-	tmpl = fmt.Sprintf("views/%s", tmpl)
+	tmpl = fmt.Sprintf("el views/%s", tmpl)
 	t, err := template.ParseFiles(tmpl)
 
 	if err != nil { // if there is an error
